@@ -1,0 +1,13 @@
+{"namespace": "br.com.moser.springkafka",
+ "type": "record",
+ "name": "People",
+ "fields": [
+     {"name": "id", "type": "string"},
+     {"name": "name",  "type": "string"},
+     {"name": "cpf", "type": "string"},
+     {"name": "books", "type": {
+         "type": "array",
+         "items": "string"
+         }}
+ ]
+}
