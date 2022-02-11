@@ -16,6 +16,7 @@
     <properties>
         <java.version>11</java.version>
         <avro.version>1.10.0</avro.version>
+        <kafka-confluent.version>5.5.1</kafka-confluent.version>
     </properties>
     <dependencies>
         <dependency>
@@ -62,6 +63,12 @@
             <artifactId>avro</artifactId>
             <version>${avro.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+            <version>${kafka-confluent.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -99,4 +106,10 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+    </repositories>
 </project>
