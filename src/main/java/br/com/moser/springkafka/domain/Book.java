@@ -1,5 +1,6 @@
 package br.com.moser.springkafka.domain;
 
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
 
@@ -11,6 +12,11 @@ import javax.persistence.ManyToOne;
 /**
  * @author Juliano Moser
  */
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 public class Book {
 
