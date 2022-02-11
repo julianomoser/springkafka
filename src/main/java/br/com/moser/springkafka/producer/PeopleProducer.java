@@ -1,6 +1,5 @@
 package br.com.moser.springkafka.producer;
 
-
 import br.com.moser.springkafka.People;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
